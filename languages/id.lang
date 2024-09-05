@@ -1,0 +1,155 @@
+# index.js
+Goat.newVersionDetected=Anda menggunakan versi %1, versi terbaru adalah %2. Harap perbarui untuk menggunakan bot dengan lebih baik dengan mengetik perintah di konsol/cmd: %3
+Goat.autoRestart1=Bot akan otomatis restart dalam %1
+Goat.autoRestart2=Bot akan otomatis restart oleh cron job: %1
+Goat.googleApiTokenExpired=Token refresh API Google telah kedaluwarsa atau dicabut, silakan dapatkan token baru di https://developers.google.com/oauthplayground/
+
+# bot/login/login.js
+login.currentlyLogged=Login sedang berlangsung
+login.notFoundDirAccount=Tidak dapat menemukan file %1
+login.loginToken=Login dengan token akses
+login.loginCookieString=Login dengan string cookie
+login.loginCookieNetscape=Login dengan cookie netscape
+login.loginCookieArray=Login dengan array cookie
+login.loginPassword=Login dengan email & kata sandi...
+login.accountError=Harap masukkan token izin penuh dalam bentuk %1 atau cookie dalam bentuk string %2 atau cookie dalam bentuk array:\n[\n  { name: %3, value: %4 },\n  { name: %5, value: %6 }\n]\n atau\n[\n  { key: %3, value: %4 },\n  { key: %5, value: %6 }\n]\nke dalam file %7
+login.cannotFindAccount=Tidak dapat menemukan akun Facebook, pilih salah satu opsi berikut (masukkan nomor untuk memilih atau tekan tombol turun dan atas untuk memilih, lalu tekan enter untuk konfirmasi):
+login.chooseAccount=Login dengan email dan kata sandi
+login.chooseToken=Login dengan token izin penuh
+login.chooseCookieString=Login dengan string cookie
+login.chooseCookieArray=Login dengan array cookie
+login.loginWith=Anda memilih untuk %1
+login.inputEmail=> Harap masukkan email (ID) atau nomor telepon akun Facebook Anda:
+login.inputPassword=> Harap masukkan kata sandi Anda:
+login.input2FA=> Harap masukkan kode 2FA (biarkan kosong jika Anda tidak mengaktifkan 2FA):
+login.inputToken=> Harap masukkan token izin penuh Anda (dimulai dengan EAAAA):
+login.inputCookieString=> Harap masukkan string cookie Anda:
+login.inputCookieArray=> Harap masukkan array cookie Anda:
+login.refreshCookie=Menyegarkan cookie...
+login.refreshCookieError=Terjadi kesalahan saat menyegarkan cookie
+login.refreshCookieSuccess=Cookie berhasil disegarkan, restart bot untuk menggunakan cookie baru
+login.refreshCookieWarning=Anda telah mengaktifkan mode penyegaran cookie otomatis, tetapi Anda belum mengonfigurasi email dan kata sandi di file config.json
+login.tokenError=Token tidak valid atau telah kedaluwarsa. Harap masukkan token izin penuh dalam bentuk %1 ke dalam file %2
+login.cookieError=Cookie tidak valid atau telah kedaluwarsa.
+login.loginPasswordError=Terjadi kesalahan saat login dengan email & kata sandi di config.json
+login.loginSuccess=Berhasil login
+login.loginError=Terjadi kesalahan saat masuk
+login.openDashboardSuccess=Berhasil membuka halaman pengelolaan bot
+login.openDashboardError=Terjadi kesalahan saat membuka halaman pengelolaan bot
+login.changeGbanData=DATA TELAH DIUBAH, SAAT INI TIDAK MUNGKIN UNTUK MENJALANKAN BOT
+login.errorNoti=Terjadi kesalahan saat mengambil pesan
+login.refreshFbstateSuccess=Berhasil menyegarkan file %1
+login.refreshFbstateError=Terjadi kesalahan saat menyegarkan file %1
+login.youAreBanned=Anda telah diblokir dari proyek Goat-Bot
+login.runBot=Berhasil meluncurkan bot, mulai menerima pesan dari pengguna
+login.notLoggedIn=Terjadi kesalahan, silakan periksa kembali akun Facebook Anda
+login.callBackError=Terjadi kesalahan saat callback listenMqtt
+login.userBanned=Anda telah diblokir dari menggunakan bot!!
+login.checkGbanError=Terjadi kesalahan saat memeriksa GBAN, coba perbarui sumber ke versi terbaru (buka cmd dan ketik: node update)
+login.gbanMessage=Anda telah diblokir dari proyek Goat-Bot pada %1 dengan alasan: %2\n» Waktu: %3
+login.gbanMessageToDate=Anda telah diblokir dari proyek Goat-Bot pada %1 dengan alasan: %2\n» Waktu: %3\n» Hingga tanggal: %4
+login.gbanAdminMessage=Pengguna %1 telah diblokir dari proyek Goat-Bot pada %2 dengan alasan: %3
+login.openServerUptimeSuccess=🚀 Server uptime dibuka: %1
+login.openServerUptimeError=Terjadi kesalahan, tidak dapat membuka server uptime
+login.restartListenMessage=Restart ListenMQTT diaktifkan setiap %1
+login.stopRestartListenMessage=Restart ListenMQTT dinonaktifkan
+login.restartListenMessageError=Terjadi kesalahan saat merestart ListenMQTT
+login.restartListenMessage2=Berhasil merestart ListenMQTT
+login.refreshCookieAfter=Penyegaran cookie setelah %1
+login.listenMqttClose=ListenMQTT ditutup
+login.listenMqttCloseByUser=ListenMQTT ditutup oleh pengguna
+login.retryCheckLiveCookie=Mencoba kembali memeriksa cookie... %1
+login.startBotSuccess=Bot berhasil dimulai, mulai menerima pesan dari pengguna
+
+version.tooOldVersion=Anda menggunakan versi Goat-Bot yang terlalu lama, harap perbarui ke versi terbaru dengan mengetik perintah: %1 ke cmd/konsol/terminal/shell
+
+# bot/custom.js
+custom.refreshedFb_dtsg=fb_dtsg dan jazoest berhasil disegarkan
+custom.refreshedFb_dtsgError=Terjadi kesalahan saat menyegarkan fb_dtsg dan jazoest
+
+# bot/login/loadData.js
+loadData.loadThreadDataSuccess=Data grup %1 berhasil dimuat!
+loadData.loadUserDataSuccess=Data pengguna %1 berhasil dimuat!
+loadData.refreshingThreadData=Memperbarui informasi grup...
+loadData.refreshThreadDataSuccess=Informasi grup %1 berhasil diperbarui!
+loadData.refreshThreadDataError=Terjadi kesalahan saat memperbarui informasi grup!
+
+# bot/login/loadScripts.js
+loadScripts.loadScriptsError=File %1 mengalami kesalahan saat pemuatan:
+loadScripts.loadScriptsNotMatchOrigin=File %1 tidak cocok dengan file asli di proyek github, pastikan bahwa file perintah ini dapat dipercaya:
+loadScripts.NOT_FOUND=TIDAK DITEMUKAN DI KODE SUMBER ASLI:
+loadScripts.NOT_MATCH=TIDAK COCOK DENGAN KODE SUMBER ASLI:
+
+# bot/login/socketIO.js
+socketIO.connected=Terkoneksi ke server socket.io
+socketIO.error=Terjadi kesalahan saat menghubungkan ke server socket.io
+
+# bot/handler/handlerCheckData.js
+handlerCheckData.cantCreateThread=Grup dengan id '%1' tidak dapat ditulis ke basis data!
+handlerCheckData.cantCreateUser=Pengguna dengan id '%1' tidak dapat ditulis ke basis data!
+
+# bot/handler/handlerEvents.js
+handlerEvents.userBanned=Anda telah diblokir dari menggunakan bot\n» Alasan: %1\n» Waktu: %2\n» ID Pengguna: %3
+handlerEvents.threadBanned=Grup ini telah diblokir dari menggunakan bot\n» Alasan: %1\n» Waktu: %2\n» ID Grup: %3
+handlerEvents.onlyAdminBox=Hanya administrator grup yang dapat menggunakan bot di grup ini
+handlerEvents.onlyAdminBot=❌ | Saat ini hanya admin bot yang dapat menggunakan zer
+handlerEvents.commandNotFound=Perintah "%1" tidak ditemukan, ketik %2help untuk melihat semua perintah yang tersedia
+handlerEvents.commandNotFound2=Perintah yang Anda gunakan tidak ditemukan, ketik %1help untuk melihat semua perintah yang tersedia
+handlerEvents.commandSyntaxError=Perintah yang Anda gunakan salah sintaks, silakan ketik %1help %2 untuk melihat detail cara menggunakan perintah ini
+handlerEvents.onlyAdmin=❌ | Hanya administrator grup yang dapat menggunakan perintah "%1"
+handlerEvents.onlyAdminToUseOnReply=❌ | Hanya administrator grup yang dapat menggunakan fungsi balasan dari perintah "%1"
+handlerEvents.onlyAdminToUseOnReaction=❌ | Hanya administrator grup yang dapat menggunakan fungsi reaksi dari perintah "%1"
+handlerEvents.onlyAdminBot2=❌ | Hanya admin bot yang dapat menggunakan perintah "%1"
+handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Hanya admin bot yang dapat menggunakan fungsi balasan dari perintah "%1"
+handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Hanya admin bot yang dapat menggunakan fungsi reaksi dari perintah "%1"
+handlerEvents.waitingForCommand=⏱ sedang cooldown bro jangan di spam tunggu selama: %1 detik
+handlerEvents.errorOccurred=❌ [ %1 ]\nTerjadi kesalahan pada perintah "%2"\n\n%3
+handlerEvents.errorOccurred2=❌ [ %1 ]\nTerjadi kesalahan pada perintah onChat di perintah "%2"\n\n%3
+handlerEvents.errorOccurred3=❌ [ %1 ]\nTerjadi kesalahan saat mengeksekusi onReply di perintah "%2"\n\n%3
+handlerEvents.errorOccurred4=❌ [ %1 ]\nTerjadi kesalahan saat mengeksekusi onReaction di perintah "%2"\n\n%3
+handlerEvents.errorOccurred5=❌ [ %1 ]\nTerjadi kesalahan saat mengeksekusi onEvent di perintah "%2"\n\n%3
+handlerEvents.errorOccurred6=❌ [ %1 ]\nTerjadi kesalahan saat mengeksekusi onEvent di perintah "%2"\n\n%3
+handlerEvents.errorOccurred7=❌ [ %1 ]\nTerjadi kesalahan saat mengeksekusi onAnyEvent di perintah "%2"\n\n%3
+handlerEvents.cannotFindCommandName=❌ Tidak dapat menemukan nama perintah untuk mengeksekusi balasan ini!
+handlerEvents.cannotFindCommand=❌ Tidak dapat menemukan perintah "%1" untuk mengeksekusi balasan ini!
+
+# bot/autoUptime.js
+autoUptime.autoUptimeTurnedOn=Mode AutoUptime diaktifkan
+
+# database/controller/index.js
+indexController.connectingMongoDB=Menghubungkan ke database MONGODB
+indexController.connectMongoDBSuccess=Berhasil terhubung ke database mongodb!
+indexController.connectMongoDBError=Terjadi kesalahan saat menghubungkan ke database Mongodb:
+indexController.connectingMySQL=Menghubungkan ke database SQLITE
+indexController.connectMySQLSuccess=Berhasil terhubung ke database SQLITE!
+indexController.connectMySQLError=Terjadi kesalahan saat menghubungkan ke database SQLITE:
+
+# updater.js
+updater.updateTooFast=Harap tunggu setidaknya 5 menit setelah commit terbaru untuk memperbarui tanpa kesalahan, tersisa %1 menit %2 detik
+updater.latestVersion=Anda menggunakan versi terbaru
+updater.cantFindVersion=Anda menggunakan versi yang tidak terdefinisi (%1), silakan periksa kembali file package.json Anda
+updater.newVersions=Ada %1 versi baru untuk diperbarui, mulai memperbarui...
+updater.updateSuccess=Berhasil memperbarui%1
+updater.configChanged=File %1 telah berubah, silakan periksa kembali file config.json Anda
+updater.installingPackages=Menginstal dependensi untuk bot...
+updater.installSuccess=Dependensi berhasil diinstal, restart bot untuk menggunakan versi baru
+updater.backupSuccess=Berhasil membackup file yang berubah, lihat di folder %1
+updater.restartToApply=. Restart bot untuk menerapkan versi baru
+updater.skipFile=Ada versi baru dari file %1, tetapi Anda telah melewati file ini selama proses pembaruan dengan komentar %2 di file ini
+
+# dashboard/routes/verifyfbid.js
+verifyfbid.sendCode=Kode verifikasi Anda adalah:\n%1\nKode verifikasi berlaku selama %2 menit
+
+# utils.js
+utils.errorOccurred=❌ Terjadi kesalahan:\n\n%1
+
+# for command
+command.restartedBot=Bot telah di-restart
+
+# dashboard/app.js
+app.googleApiRefreshTokenExpired=Token refresh API Google telah kedaluwarsa atau dicabut, silakan dapatkan token baru di https://developers.google.com/oauthplayground/
+app.tooManyRequests=Terlalu banyak permintaan dalam satu menit terakhir. Silakan coba lagi nanti.
+app.notPermissionChangeFbstate=Anda tidak memiliki izin untuk mengubah fbstate!
+app.notFoundFbstate=Harap masukkan fbstate!
+app.changedFbstateSuccess=Berhasil mengubah fbstate!
+app.serverError=Terjadi kesalahan server, silakan coba lagi nanti!
